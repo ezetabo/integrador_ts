@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Carrito</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+    <header class="catalogo-header">
+        <h1>Mi carrito</h1>
+        <nav class="catalogo-nav">
+            <a href="../home/home.html">&larr; Volver al catálogo</a>
+            <button id="logoutButton">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main class="carrito-main">
+        <p id="carritoVacio" hidden>Todavía no agregaste productos al carrito.</p>
+
+        <table id="tablaCarrito" class="tabla-carrito">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoCarrito"></tbody>
+        </table>
+
+        <div class="carrito-resumen">
+            <p>Total: <strong id="totalCarrito">$0.00</strong></p>
+            <button id="vaciarCarrito">Vaciar carrito</button>
+            <button id="finalizarCompra" disabled title="No disponible en esta instancia">Finalizar compra</button>
+        </div>
+    </main>
+
+    <script type="module" src="./cart.ts"></script>
+</body>
+
+</html>
