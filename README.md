@@ -49,3 +49,6 @@ src/
 └── utils/
     └── cart.ts      → lógica del carrito sobre localStorage (clave "cart")
 ```
+
+
+[Link al VIDEO](https://youtu.be/iy86sBWXhRc)
